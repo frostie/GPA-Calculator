@@ -1,0 +1,2 @@
+# GPA-Calculator
+The GPA Calculator is a tool used to take a percentage grade and convert it to the 4.0 or 9.0 GPA scale.
