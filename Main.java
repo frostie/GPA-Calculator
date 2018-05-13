@@ -4,17 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        letterGradeConverter("Biology", 75);
-        letterGradeConverter("Computer Science", 82);
-        letterGradeConverter("Physics", 96);
-        letterGradeConverter("Mathematics", 67);
-        letterGradeConverter("English", 54);
-        letterGradeConverter("Geography", 62);
-        letterGradeConverter("Fashion", 71);
-        letterGradeConverter("Software Engineering", 99);
-        letterGradeConverter("Biology", 85);
-        letterGradeConverter("Civics", 67);
-        letterGradeConverter("Painting", 49);
+        letterGradeConverter("Course 1", 90);
+        letterGradeConverter("Course 2", 85);
+        letterGradeConverter("Course 3", 76);
+        letterGradeConverter("Course 4", 70);
+        letterGradeConverter("Course 5", 67);
+        letterGradeConverter("Course 6", 62);
+        letterGradeConverter("Course 7", 57);
+        letterGradeConverter("Course 8", 53);
+        letterGradeConverter("Course 9", 49);
+
+        gpaConverter(67.66);
     }
 
     private static int letterGradeConverter(String subjectName, int studentGrade) {
@@ -61,7 +61,14 @@ public class Main {
         else if(studentGrade >= 0 && studentGrade <= 49) {
             System.out.println(studentGrade + "% (F) in " + subjectName);
         }
-        return studentGrade;
+        // System.out.println(studentGrade * 0.04 / 100);
 
+        return studentGrade;
+    }
+
+    public static double gpaConverter(double studentAvg) {
+
+        System.out.println("Grade average " + studentAvg);
+        return studentAvg;
     }
 }
