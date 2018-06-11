@@ -1,8 +1,12 @@
 package com.PhilMarcoccia;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
 
         letterGradeConverter("Course 1", 90);
         letterGradeConverter("Course 2", 85);
@@ -17,7 +21,7 @@ public class Main {
         gpaConverter(67.66);
     }
 
-    private static int letterGradeConverter(String subjectName, int studentGrade) {
+    private static double letterGradeConverter(String subjectName, double studentGrade) {
 
         if(studentGrade >= 90 && studentGrade <= 100) {
             System.out.println(studentGrade + "% (A+) in " + subjectName);
