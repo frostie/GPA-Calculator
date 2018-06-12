@@ -14,7 +14,6 @@ public class Main {
 
         while (hasNextLine) {
             String course1 = scanner.nextLine();
-
             System.out.println("Enter grade for " + course1);
             int grade1 = scanner.nextInt();
 
@@ -60,8 +59,12 @@ public class Main {
             else if(grade1 >= 0 && grade1 <= 49) {
                 System.out.println(grade1 + "% (F) in " + course1);
             }
+            else {
+                System.out.println("Invalid entry!");
+            }
 
             scanner.nextLine();
+            System.out.println("Enter another course name");
 
         }
     }
