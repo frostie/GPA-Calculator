@@ -8,71 +8,61 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        letterGradeConverter("Course 1", 90);
-        letterGradeConverter("Course 2", 85);
-        letterGradeConverter("Course 3", 76);
-        letterGradeConverter("Course 4", 70);
-        letterGradeConverter("Course 5", 67);
-        letterGradeConverter("Course 6", 62);
-        letterGradeConverter("Course 7", 57);
-        letterGradeConverter("Course 8", 53);
-        letterGradeConverter("Course 9", 49);
+        System.out.println("Thanks for using the GPA Calculator! Enter a course name below: ");
 
-        gpaConverter(67.66);
-    }
+        boolean hasNextLine = scanner.hasNextLine();
 
-    private static double letterGradeConverter(String subjectName, double studentGrade) {
+        while (hasNextLine) {
+            String course1 = scanner.nextLine();
 
-        if(studentGrade >= 90 && studentGrade <= 100) {
-            System.out.println(studentGrade + "% (A+) in " + subjectName);
-        }
-        else if(studentGrade >=85 && studentGrade <= 89) {
-            System.out.println(studentGrade + "% (A) in " + subjectName);
-        }
-        else if(studentGrade >= 80 && studentGrade <= 84) {
-            System.out.println(studentGrade + "% (A-) in " + subjectName);
-        }
-        else if(studentGrade >= 77 && studentGrade <= 79) {
-            System.out.println(studentGrade + "% (B+) in " + subjectName);
-        }
-        else if(studentGrade >= 73 && studentGrade <= 76) {
-            System.out.println(studentGrade + "% (B) in " + subjectName);
-        }
-        else if(studentGrade >= 70 && studentGrade <= 72) {
-            System.out.println(studentGrade + "% (B-) in " + subjectName);
-        }
-        else if(studentGrade >= 67 && studentGrade <= 69) {
-            System.out.println(studentGrade + "% (C+) in " + subjectName);
-        }
-        else if(studentGrade >= 63 && studentGrade <= 66) {
-            System.out.println(studentGrade + "% (C) in " + subjectName);
-        }
-        else if(studentGrade >= 60 && studentGrade <= 62) {
-            System.out.println(studentGrade + "% (C-) in " + subjectName);
-        }
-        else if(studentGrade >= 60 && studentGrade <= 62) {
-            System.out.println(studentGrade + "% (C-) in " + subjectName);
-        }
-        else if(studentGrade >= 57 && studentGrade <= 59) {
-            System.out.println(studentGrade + "% (D+) in " + subjectName);
-        }
-        else if(studentGrade >= 53 && studentGrade <= 56) {
-            System.out.println(studentGrade + "% (D) in " + subjectName);
-        }
-        else if(studentGrade >= 50 && studentGrade <= 52) {
-            System.out.println(studentGrade + "% (D-) in " + subjectName);
-        }
-        else if(studentGrade >= 0 && studentGrade <= 49) {
-            System.out.println(studentGrade + "% (F) in " + subjectName);
-        }
-        // System.out.println(studentGrade * 0.04 / 100);
+            System.out.println("Enter grade for " + course1);
+            int grade1 = scanner.nextInt();
 
-        return studentGrade;
-    }
+            if(grade1 >= 90 && grade1 <= 100) {
+                System.out.println(grade1 + "% (A+) in " + course1);
+            }
+            else if(grade1 >=85 && grade1 <= 89) {
+                System.out.println(grade1 + "% (A) in " + course1);
+            }
+            else if(grade1 >= 80 && grade1 <= 84) {
+                System.out.println(grade1 + "% (A-) in " + course1);
+            }
+            else if(grade1 >= 77 && grade1 <= 79) {
+                System.out.println(grade1 + "% (B+) in " + course1);
+            }
+            else if(grade1 >= 73 && grade1 <= 76) {
+                System.out.println(grade1 + "% (B) in " + course1);
+            }
+            else if(grade1 >= 70 && grade1 <= 72) {
+                System.out.println(grade1 + "% (B-) in " + course1);
+            }
+            else if(grade1 >= 67 && grade1 <= 69) {
+                System.out.println(grade1 + "% (C+) in " + course1);
+            }
+            else if(grade1 >= 63 && grade1 <= 66) {
+                System.out.println(grade1 + "% (C) in " + course1);
+            }
+            else if(grade1 >= 60 && grade1 <= 62) {
+                System.out.println(grade1 + "% (C-) in " + course1);
+            }
+            else if(grade1 >= 60 && grade1 <= 62) {
+                System.out.println(grade1 + "% (C-) in " + course1);
+            }
+            else if(grade1 >= 57 && grade1 <= 59) {
+                System.out.println(grade1 + "% (D+) in " + course1);
+            }
+            else if(grade1 >= 53 && grade1 <= 56) {
+                System.out.println(grade1 + "% (D) in " + course1);
+            }
+            else if(grade1 >= 50 && grade1 <= 52) {
+                System.out.println(grade1 + "% (D-) in " + course1);
+            }
+            else if(grade1 >= 0 && grade1 <= 49) {
+                System.out.println(grade1 + "% (F) in " + course1);
+            }
 
-    public static double gpaConverter(double studentAvg) {
+            scanner.nextLine();
 
-        System.out.println("Grade average " + studentAvg);
-        return studentAvg;
+        }
     }
 }
