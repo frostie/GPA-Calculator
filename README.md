@@ -3,4 +3,4 @@ The GPA Calculator is a simple tool used to take a percentage grade average and 
 
 ## Next Actions
     (a): Create a line to sum up all the courses and grades entered by user and calculate an average.
-    (b): Take the calculated average and apply it to the 4.0 or 9.0 scale, based on the user's selection.
+    (b): Take the calculated average and convert it to the 4.0 or 9.0 scale, based on the user's selection.
